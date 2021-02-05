@@ -29,7 +29,7 @@
       let contactHeading = document.createElement("h1");
 
       contactHeading.setAttribute("id", "contactHeading");
-      contactHeading.textContent = "Enter a Contact";
+      contactHeading.textContent = "Welcome to lab 1";
 
       let mainContent = document.querySelector("main");
       mainContent.appendChild(contactHeading);

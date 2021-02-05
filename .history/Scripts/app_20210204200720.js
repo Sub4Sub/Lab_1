@@ -29,7 +29,7 @@
       let contactHeading = document.createElement("h1");
 
       contactHeading.setAttribute("id", "contactHeading");
-      contactHeading.textContent = "Enter a Contact";
+      contactHeading.textContent = "Welcome to lab 1";
 
       let mainContent = document.querySelector("main");
       mainContent.appendChild(contactHeading);
@@ -62,6 +62,10 @@
           <button id="sendButton" type="submit" class="btn btn-primary"><i class="fas fa-envelope fa-lg"></i> Send</button>
           <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
         </form>
+
+        <div class="col-lg-3 col-md-3">
+          <a href="contact-list.html" class="btn btn-primary btn-lg"><i class="fas fa-users fa-lg"></i> Show Contact List</a>
+        </div>
       </div>`;
 
       mainContent.append(newDivTag);
