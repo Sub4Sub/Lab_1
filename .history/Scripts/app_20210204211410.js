@@ -66,16 +66,15 @@
 
       mainContent.append(newDivTag);
 
-
-
       let sendButton = document.getElementById("sendButton");
-
         sendButton.addEventListener("click", function(event){
-            
-          window.location.href = '/index.html';
+            //event.preventDefault();
 
+            let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
+
+            localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
         });
-
+        
     }
 
     function Start()

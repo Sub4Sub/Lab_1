@@ -69,10 +69,10 @@
 
 
       let sendButton = document.getElementById("sendButton");
-
+      
         sendButton.addEventListener("click", function(event){
             
-          window.location.href = '/index.html';
+          window.location.href = '/index.html'
 
         });
 
