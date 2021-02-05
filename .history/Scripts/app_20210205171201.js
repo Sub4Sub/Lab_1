@@ -110,32 +110,18 @@
         let serviceHeading = document.createElement("h1");
 
         serviceHeading.setAttribute("id", "serviceHeading");
-        serviceHeading.textContent = `Services`;
+        serviceHeading.textContent = `Welcome to lab 1`;
 
         let mainContent = document.querySelector("main");
         mainContent.appendChild(serviceHeading);
 
         let newDivTag = document.createElement("div");
         newDivTag.innerHTML = 
-        `
-        <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">List of Skills</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Emeka Okoisama</th>
-      <td>Search Engine optimization, Web Design and Testing and debugging.</td>
-    </tr>
-    <tr>
-      <th scope="row">Brett Tindall</th>
-      <td>Graphic Design, working with Hosting and working with databases.</td>
-    </tr>
-  </tbody>
-</table>`;
+        `<h4>By Brett Tindall and Emeka Okoisama</h4>
+        <p id="paragraphThree">
+        Hello, welcome to our first lab submission for Webd 6201. This website consists of multiple web pages that give information about us
+        and help demonstrate our prowess with javascript.
+        </p>`;
 
 
         mainContent.append(newDivTag);

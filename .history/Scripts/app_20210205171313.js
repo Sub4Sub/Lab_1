@@ -110,7 +110,7 @@
         let serviceHeading = document.createElement("h1");
 
         serviceHeading.setAttribute("id", "serviceHeading");
-        serviceHeading.textContent = `Services`;
+        serviceHeading.textContent = `Welcome to lab 1`;
 
         let mainContent = document.querySelector("main");
         mainContent.appendChild(serviceHeading);
@@ -127,15 +127,31 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Emeka Okoisama</th>
-      <td>Search Engine optimization, Web Design and Testing and debugging.</td>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
     </tr>
     <tr>
-      <th scope="row">Brett Tindall</th>
-      <td>Graphic Design, working with Hosting and working with databases.</td>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
     </tr>
   </tbody>
-</table>`;
+</table>
+
+<h4> These are the skills of Emeka Okoisama:</b>
+        Search Engine optimization, Web Design and Testing and debugging.<br><br></h4>
+    
+    <h4> These are the skills of Brett Tindall:</b>
+        Graphic Design, working with Hosting and working with databases.</h4>`;
 
 
         mainContent.append(newDivTag);

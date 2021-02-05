@@ -110,7 +110,7 @@
         let serviceHeading = document.createElement("h1");
 
         serviceHeading.setAttribute("id", "serviceHeading");
-        serviceHeading.textContent = `Services`;
+        serviceHeading.textContent = `Welcome to lab 1`;
 
         let mainContent = document.querySelector("main");
         mainContent.appendChild(serviceHeading);

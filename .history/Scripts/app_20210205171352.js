@@ -110,7 +110,7 @@
         let serviceHeading = document.createElement("h1");
 
         serviceHeading.setAttribute("id", "serviceHeading");
-        serviceHeading.textContent = `Services`;
+        serviceHeading.textContent = `Welcome to lab 1`;
 
         let mainContent = document.querySelector("main");
         mainContent.appendChild(serviceHeading);
@@ -135,7 +135,13 @@
       <td>Graphic Design, working with Hosting and working with databases.</td>
     </tr>
   </tbody>
-</table>`;
+</table>
+
+<h4> These are the skills of Emeka Okoisama:</b>
+        Search Engine optimization, Web Design and Testing and debugging.<br><br></h4>
+    
+    <h4> These are the skills of Brett Tindall:</b>
+        Graphic Design, working with Hosting and working with databases.</h4>`;
 
 
         mainContent.append(newDivTag);
