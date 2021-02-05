@@ -10,7 +10,7 @@
         let indexHeading = document.createElement("h1");
 
         indexHeading.setAttribute("id", "indexHeading");
-        indexHeading.textContent = `Welcome to lab 1`;
+        indexHeading.textContent = "Welcome to lab 1";
         //indexHeading.className = "fs-4 fw-bold";
 
         let mainContent = document.querySelector("main");
@@ -81,10 +81,16 @@
 
     function displayHeader()
     {
-      let indexHeading = document.createElement("h1");
 
-        indexHeading.setAttribute("id", "indexHeading");
-        indexHeading.textContent = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      let mainContent = document.querySelector("main");
+
+      let newHeaderTag = document.createElement("header");
+
+      newHeaderTag.innerHTML = 
+      `
+      <header>
+      <!-- Main Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">WEBD6201</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,8 +110,8 @@
                   <a class="nav-link" aria-current="page" href="services.html"><i class="fas fa-map fa-lg"></i> Services</a>
                 </li>
 
-                <li class="nav-item" id="aboutUsList">
-                  <a class="nav-link" id="aboutUsLink" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
                 </li>
 
                 <li class="nav-item">
@@ -114,7 +120,10 @@
               </ul>
             </div>
           </div>
-        </nav>`;
+        </nav>
+  </header>
+      `
+      mainContent.insertBerfore(newHeaderTag);
 
     }
 
@@ -141,19 +150,22 @@
 
     function addHumanResourcesButton()
     {
+      let mainContent = document.querySelector("main");
 
-      let aboutUsLink = document.getElementById("aboutUsList");
+      let newFooterTag = document.createElement("footer");
 
-      let newListItem = document.createElement("li");
-
-      newListItem.innerHTML = 
+      newFooterTag.innerHTML = 
       `
-      <li class="nav-item">
-        <a class="nav-link" id="HumanResourcesLink" aria-current="page" href="human-resources.html"><i class="fas fa-globe fa-lg"></i> Human Resources</a>
-      </li>
+      <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="container-fluid">
+              <h4><i class="far fa-copyright fa-lg"></i> Copyright 2021.</h4>
+            </div>
+          </nav>
+    </footer>
       `
 
-      aboutUsLink.after(newListItem);
+      mainContent.append(newFooterTag);
 
     }
 
@@ -161,11 +173,13 @@
     {
         console.log("App Started...");
 
+        displayHeader();
+
         let productsButton = document.getElementById("productsLink");
 
         productsButton.textContent = "Projects";
 
-        addHumanResourcesButton();
+        
 
         switch (document.title) 
         {

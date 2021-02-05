@@ -10,7 +10,7 @@
         let indexHeading = document.createElement("h1");
 
         indexHeading.setAttribute("id", "indexHeading");
-        indexHeading.textContent = `Welcome to lab 1`;
+        indexHeading.textContent = "Welcome to lab 1";
         //indexHeading.className = "fs-4 fw-bold";
 
         let mainContent = document.querySelector("main");
@@ -81,40 +81,15 @@
 
     function displayHeader()
     {
-      let indexHeading = document.createElement("h1");
 
-        indexHeading.setAttribute("id", "indexHeading");
-        indexHeading.textContent = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">WEBD6201</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
-                </li>
+      let newHeaderTag = document.createElement("header");
 
-                <li class="nav-item">
-                  <a class="nav-link" id="productsLink" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Products</a>
-                </li>
+      newHeaderTag.setAttribute("id", "newHeaderTag");
 
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="services.html"><i class="fas fa-map fa-lg"></i> Services</a>
-                </li>
+      
+      indexHeading.textContent = "Welcome to lab 1";
 
-                <li class="nav-item" id="aboutUsList">
-                  <a class="nav-link" id="aboutUsLink" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="contact.html"><i class="fas fa-phone fa-lg"></i> Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>`;
+      mainContent.append(newFooterTag);
 
     }
 
@@ -141,19 +116,22 @@
 
     function addHumanResourcesButton()
     {
+      let mainContent = document.querySelector("main");
 
-      let aboutUsLink = document.getElementById("aboutUsList");
+      let newFooterTag = document.createElement("footer");
 
-      let newListItem = document.createElement("li");
-
-      newListItem.innerHTML = 
+      newFooterTag.innerHTML = 
       `
-      <li class="nav-item">
-        <a class="nav-link" id="HumanResourcesLink" aria-current="page" href="human-resources.html"><i class="fas fa-globe fa-lg"></i> Human Resources</a>
-      </li>
+      <footer>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="container-fluid">
+              <h4><i class="far fa-copyright fa-lg"></i> Copyright 2021.</h4>
+            </div>
+          </nav>
+    </footer>
       `
 
-      aboutUsLink.after(newListItem);
+      mainContent.append(newFooterTag);
 
     }
 
@@ -164,8 +142,6 @@
         let productsButton = document.getElementById("productsLink");
 
         productsButton.textContent = "Projects";
-
-        addHumanResourcesButton();
 
         switch (document.title) 
         {

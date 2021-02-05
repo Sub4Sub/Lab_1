@@ -149,11 +149,11 @@
       newListItem.innerHTML = 
       `
       <li class="nav-item">
-        <a class="nav-link" id="HumanResourcesLink" aria-current="page" href="human-resources.html"><i class="fas fa-globe fa-lg"></i> Human Resources</a>
+        <a class="nav-link" id="aboutUsLink" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
       </li>
       `
 
-      aboutUsLink.after(newListItem);
+      aboutUsLink.insertBefore(newListItem);
 
     }
 
