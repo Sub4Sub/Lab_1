@@ -29,7 +29,6 @@
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
-        
         mainContent.append(newDivTag);
 
         

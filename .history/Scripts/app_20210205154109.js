@@ -29,7 +29,6 @@
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
-        
         mainContent.append(newDivTag);
 
         
@@ -100,9 +99,9 @@
 
      //let sendButton = document.getElementById("body");
 
-     let newFooterTag = document.createElement("header");
+     //let newFooterTag = document.createElement("header");
 
-     newFooterTag.innerHTML = 
+     newFooterTag = 
      `
      <header>
       <!-- Main Navigation -->
@@ -140,7 +139,7 @@
   </header>
      `
 
-     mainContent.prepend(newFooterTag);
+     sendButton.insertAdjacentHTML('afterbegin', newFooterTag);
 
    }
 

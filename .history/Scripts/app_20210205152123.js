@@ -29,7 +29,6 @@
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
-        
         mainContent.append(newDivTag);
 
         
@@ -85,7 +84,7 @@
 
         sendButton.addEventListener("click", function(event){
             
-          window.location.href = './index.html';
+          window.location.href = '/index.html';
 
         });
 
@@ -98,49 +97,20 @@
    {
      let mainContent = document.querySelector("body");
 
-     //let sendButton = document.getElementById("body");
-
-     let newFooterTag = document.createElement("header");
+     let newFooterTag = document.createElement("footer");
 
      newFooterTag.innerHTML = 
      `
-     <header>
-      <!-- Main Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">WEBD6201</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id ="headerList">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" id="productsLink" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Products</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="services.html"><i class="fas fa-map fa-lg"></i> Services</a>
-                </li>
-
-                <li class="nav-item" id="aboutUsList">
-                  <a class="nav-link" id="aboutUsLink" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="contact.html"><i class="fas fa-phone fa-lg"></i> Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-  </header>
+     <footer>
+       <nav class="navbar fixed-bottom navbar-light bg-light">
+           <div class="container-fluid">
+             <h4><i class="far fa-copyright fa-lg"></i> Copyright 2021.</h4>
+           </div>
+         </nav>
+   </footer>
      `
 
-     mainContent.prepend(newFooterTag);
+     mainContent.append(newFooterTag);
 
    }
 
@@ -212,14 +182,9 @@
 
    }
 
-   /*
-      Function that run when the page loads 
-    */
     function Start()
     {
         console.log("App Started...");
-
-        displayHeader();
 
         alterProductsButton();
 

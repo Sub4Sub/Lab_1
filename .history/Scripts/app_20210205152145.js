@@ -29,7 +29,6 @@
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
-        
         mainContent.append(newDivTag);
 
         
@@ -85,7 +84,7 @@
 
         sendButton.addEventListener("click", function(event){
             
-          window.location.href = './index.html';
+          window.location.href = '/index.html';
 
         });
 
@@ -97,8 +96,6 @@
    function displayHeader()
    {
      let mainContent = document.querySelector("body");
-
-     //let sendButton = document.getElementById("body");
 
      let newFooterTag = document.createElement("header");
 
@@ -140,7 +137,7 @@
   </header>
      `
 
-     mainContent.prepend(newFooterTag);
+     mainContent.append(newFooterTag);
 
    }
 
@@ -212,14 +209,9 @@
 
    }
 
-   /*
-      Function that run when the page loads 
-    */
     function Start()
     {
         console.log("App Started...");
-
-        displayHeader();
 
         alterProductsButton();
 
