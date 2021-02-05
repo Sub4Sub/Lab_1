@@ -90,8 +90,6 @@
 
     }
 
-    
-
     /*
       Function that displays the fixed footer at the bottom of the page
     */

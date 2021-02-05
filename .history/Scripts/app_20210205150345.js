@@ -90,8 +90,6 @@
 
     }
 
-    
-
     /*
       Function that displays the fixed footer at the bottom of the page
     */
@@ -137,34 +135,15 @@
 
     }
 
-    /*
-      Function that changes the products button's text to projects
-    */
-   function alterProductsButton()
-   {
-
-    let productsButton = document.getElementById("headerList").childNodes[3];
-
-    //productsButton.textContent = "Projects";
-
-    let newListItem = document.createElement("li");
-
-    newListItem.innerHTML = 
-   `
-   <li class="nav-item">
-               <a class="nav-link" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
-             </li>
-   `
-
-    productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
-
-   }
-
     function Start()
     {
         console.log("App Started...");
 
-        alterProductsButton();
+        let productsButton = document.getElementById("productsLink");
+
+        //productsButton.textContent = "Projects";
+
+        productsButton.replaceChild("Projects");
 
         addHumanResourcesButton();
 

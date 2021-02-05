@@ -90,8 +90,6 @@
 
     }
 
-    
-
     /*
       Function that displays the fixed footer at the bottom of the page
     */
@@ -143,20 +141,18 @@
    function alterProductsButton()
    {
 
-    let productsButton = document.getElementById("headerList").childNodes[3];
+     let aboutUsLink = document.getElementById("aboutUsList");
 
-    //productsButton.textContent = "Projects";
+     let newListItem = document.createElement("li");
 
-    let newListItem = document.createElement("li");
+     newListItem.innerHTML = 
+     `
+     <li class="nav-item">
+       <a class="nav-link" id="HumanResourcesLink" aria-current="page" href="human-resources.html"><i class="fas fa-globe fa-lg"></i> Human Resources</a>
+     </li>
+     `
 
-    newListItem.innerHTML = 
-   `
-   <li class="nav-item">
-               <a class="nav-link" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
-             </li>
-   `
-
-    productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
+     aboutUsLink.after(newListItem);
 
    }
 
@@ -164,7 +160,20 @@
     {
         console.log("App Started...");
 
-        alterProductsButton();
+        let productsButton = document.getElementById("headerList").childNodes[3];
+
+       //productsButton.textContent = "Projects";
+
+       let newListItem = document.createElement("li");
+
+       newListItem.innerHTML = 
+      `
+      <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
+                </li>
+      `
+
+       productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
 
         addHumanResourcesButton();
 

@@ -1,18 +1,12 @@
 /*
-* Name: Brett Tindall & Emeka Okoisama
-* Student Id: 100708109 & 
-* Date Completed: 2021-02-05
+* 
 */
-
 "use strict";
 
-//IIFE - Immediately Invoked Function Expression
+
 (function()
 {
 
-    /*
-      Function that displays the home page's content
-    */
     function displayHome()
     {
         let indexHeading = document.createElement("h1");
@@ -34,9 +28,6 @@
         
     }
 
-    /*
-      Function that displays the contact page's content
-    */
     function displayContact()
     {
       let contactHeading = document.createElement("h1");
@@ -90,11 +81,45 @@
 
     }
 
-    
+    function displayHeader()
+    {
+      let indexHeading = document.createElement("h1");
 
-    /*
-      Function that displays the fixed footer at the bottom of the page
-    */
+        indexHeading.setAttribute("id", "indexHeading");
+        indexHeading.textContent = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">WEBD6201</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home fa-lg"></i> Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="productsLink" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Products</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="services.html"><i class="fas fa-map fa-lg"></i> Services</a>
+                </li>
+
+                <li class="nav-item" id="aboutUsList">
+                  <a class="nav-link" id="aboutUsLink" aria-current="page" href="about.html"><i class="fas fa-info fa-lg"></i> About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="contact.html"><i class="fas fa-phone fa-lg"></i> Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>`;
+
+    }
+
     function displayFooter()
     {
       let mainContent = document.querySelector("main");
@@ -116,9 +141,6 @@
 
     }
 
-    /*
-      Function that adds a button to the human resources page
-    */
     function addHumanResourcesButton()
     {
 
@@ -137,34 +159,13 @@
 
     }
 
-    /*
-      Function that changes the products button's text to projects
-    */
-   function alterProductsButton()
-   {
-
-    let productsButton = document.getElementById("headerList").childNodes[3];
-
-    //productsButton.textContent = "Projects";
-
-    let newListItem = document.createElement("li");
-
-    newListItem.innerHTML = 
-   `
-   <li class="nav-item">
-               <a class="nav-link" aria-current="page" href="products.html"><i class="fas fa-cog fa-lg"></i> Projects</a>
-             </li>
-   `
-
-    productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
-
-   }
-
     function Start()
     {
         console.log("App Started...");
 
-        alterProductsButton();
+        let productsButton = document.getElementById("productsLink");
+
+        productsButton.textContent = "Projects";
 
         addHumanResourcesButton();
 

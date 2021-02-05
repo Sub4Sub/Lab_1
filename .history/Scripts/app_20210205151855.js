@@ -90,8 +90,6 @@
 
     }
 
-    
-
     /*
       Function that displays the fixed footer at the bottom of the page
     */
@@ -164,7 +162,7 @@
     {
         console.log("App Started...");
 
-        alterProductsButton();
+        alterProductsButton()''
 
         addHumanResourcesButton();
 
