@@ -19,6 +19,7 @@
 
         indexHeading.setAttribute("id", "indexHeading");
         indexHeading.textContent = `Welcome to lab 1`;
+        //indexHeading.className = "fs-4 fw-bold";
 
         let mainContent = document.querySelector("main");
         mainContent.appendChild(indexHeading);
@@ -38,15 +39,17 @@
     {
         let projectHeading = document.createElement("h1");
 
-        projectHeading.setAttribute("id", "projectHeading");
-        projectHeading.textContent = `Example Projects:`;
+        indexHeading.setAttribute("id", "indexHeading");
+        indexHeading.textContent = `Welcome to lab 1`;
+        //indexHeading.className = "fs-4 fw-bold";
 
         let mainContent = document.querySelector("main");
-        mainContent.appendChild(projectHeading);
+        mainContent.appendChild(indexHeading);
 
         let newDivTag = document.createElement("div");
         newDivTag.innerHTML = 
-        `<p id="paragraphThree"> This is our first lab submission </p>`;
+        `<h4>By Brett Tindall and Emeka Okoisama</h4>
+        <p id="paragraphThree"> This is our first lab submission </p>`;
 
         
         mainContent.append(newDivTag);
@@ -252,7 +255,7 @@
           case "About":
               displayAbout();
             break;
-          case "Products":
+          case "Projects":
               displayProjects();
             break;
           case "Services":

@@ -42,7 +42,7 @@
         projectHeading.textContent = `Example Projects:`;
 
         let mainContent = document.querySelector("main");
-        mainContent.appendChild(projectHeading);
+        mainContent.appendChild(indexHeading);
 
         let newDivTag = document.createElement("div");
         newDivTag.innerHTML = 
@@ -252,7 +252,7 @@
           case "About":
               displayAbout();
             break;
-          case "Products":
+          case "Projects":
               displayProjects();
             break;
           case "Services":

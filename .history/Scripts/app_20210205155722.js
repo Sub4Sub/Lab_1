@@ -252,7 +252,7 @@
           case "About":
               displayAbout();
             break;
-          case "Products":
+          case "Projects":
               displayProjects();
             break;
           case "Services":
