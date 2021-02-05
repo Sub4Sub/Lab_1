@@ -27,8 +27,7 @@
         newDivTag.innerHTML = 
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree">
-        Hello, welcome to our first lab submission for Webd 6201. This website consists of multiple web pages that give information about us
-        and help demonstrate our prowess with javascript.
+        Hello, welcome to our first lab submission for Webd 6201. This website is
         </p>`;
 
 
