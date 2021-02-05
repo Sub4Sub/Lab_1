@@ -23,7 +23,7 @@
 
         mainContent.append(newDivTag);
 
-        
+        displayFooter();
     }
 
     function displayContact()
@@ -128,8 +128,6 @@
         }
         
     }
-
-    displayFooter();
 
     window.addEventListener("load", Start);
 

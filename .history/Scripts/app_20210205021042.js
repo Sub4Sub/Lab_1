@@ -22,8 +22,6 @@
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
         mainContent.append(newDivTag);
-
-        
     }
 
     function displayContact()
@@ -68,6 +66,8 @@
 
       mainContent.append(newDivTag);
 
+      displayFooter();
+
 
       let sendButton = document.getElementById("sendButton");
 
@@ -83,9 +83,9 @@
     {
       let mainContent = document.querySelector("main");
 
-      let newFooterTag = document.createElement("footer");
+      let newFooterTag = document.createElement("div");
 
-      newFooterTag.innerHTML = 
+      newDivTag.innerHTML = 
       `
       <footer>
         <nav class="navbar fixed-bottom navbar-light bg-light">
@@ -96,7 +96,7 @@
     </footer>
       `
 
-      mainContent.append(newFooterTag);
+      mainContent.append(newDivTag);
 
     }
 
@@ -128,8 +128,6 @@
         }
         
     }
-
-    displayFooter();
 
     window.addEventListener("load", Start);
 

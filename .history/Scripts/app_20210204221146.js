@@ -22,8 +22,6 @@
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
         mainContent.append(newDivTag);
-
-        
     }
 
     function displayContact()
@@ -69,6 +67,7 @@
       mainContent.append(newDivTag);
 
 
+
       let sendButton = document.getElementById("sendButton");
 
         sendButton.addEventListener("click", function(event){
@@ -79,34 +78,15 @@
 
     }
 
-    function displayFooter()
-    {
-      let mainContent = document.querySelector("main");
-
-      let newFooterTag = document.createElement("footer");
-
-      newFooterTag.innerHTML = 
-      `
-      <footer>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-            <div class="container-fluid">
-              <h4><i class="far fa-copyright fa-lg"></i> Copyright 2021.</h4>
-            </div>
-          </nav>
-    </footer>
-      `
-
-      mainContent.append(newFooterTag);
-
-    }
-
     function Start()
     {
         console.log("App Started...");
 
-        let productsButton = document.getElementById("productsLink");
+        let productsButton = document.getElementById("products");
+        let productsIcon = document.getElementById("productIcon");
 
         productsButton.textContent = "Projects";
+        productsButton.classContent = "fas fa-cog fa-lg";
 
         switch (document.title) 
         {
@@ -128,8 +108,6 @@
         }
         
     }
-
-    displayFooter();
 
     window.addEventListener("load", Start);
 

@@ -22,8 +22,6 @@
         <p id="paragraphThree"> This is our first lab submission </p>`;
 
         mainContent.append(newDivTag);
-
-        
     }
 
     function displayContact()
@@ -67,6 +65,8 @@
       </div>`;
 
       mainContent.append(newDivTag);
+
+      displayFooter();
 
 
       let sendButton = document.getElementById("sendButton");
@@ -128,8 +128,6 @@
         }
         
     }
-
-    displayFooter();
 
     window.addEventListener("load", Start);
 
