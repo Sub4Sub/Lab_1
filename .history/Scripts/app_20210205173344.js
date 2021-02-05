@@ -382,7 +382,6 @@
     
     displayFooter(); //Calling the display footer function to display the footer
 
-    //Calling the start function when loaded
     window.addEventListener("load", Start);
 
 })();

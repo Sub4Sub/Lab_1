@@ -356,9 +356,8 @@
 
         alterProductsButton(); //Calling alterProductButton() to change the products button to projects button
 
-        addHumanResourcesButton(); //Calling addHumanResources() to add the human resources button
+        addHumanResourcesButton();
 
-        //Switch case that tests the documents title and calls the appropriate function
         switch (document.title) 
         {
           case "Home":
@@ -379,10 +378,9 @@
         }
         
     }
-    
-    displayFooter(); //Calling the display footer function to display the footer
 
-    //Calling the start function when loaded
+    displayFooter();
+
     window.addEventListener("load", Start);
 
 })();

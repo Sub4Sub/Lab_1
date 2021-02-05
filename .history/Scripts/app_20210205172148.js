@@ -36,7 +36,7 @@
         and help demonstrate our prowess with javascript.
         </p>`;
 
-        //Appending the div to the end of main
+
         mainContent.append(newDivTag);
 
         
@@ -47,19 +47,14 @@
     */
     function displayProjects()
     {
-      //Creating header element
         let projectHeading = document.createElement("h1");
 
-        //Setting headers id and giving it text content
         projectHeading.setAttribute("id", "projectHeading");
         projectHeading.textContent = `Example Projects:`;
 
-        //Using jquery to select main element
         let mainContent = document.querySelector("main");
-        //Appending header to end of main
         mainContent.appendChild(projectHeading);
 
-        //Creating a div element that contains the pages content
         let newDivTag = document.createElement("div");
         newDivTag.innerHTML = 
         `<table class="table">
@@ -106,7 +101,7 @@
         </tbody>
       </table>`;
 
-        //Appending the div to the end of main
+        
         mainContent.append(newDivTag);
 
         
@@ -117,19 +112,14 @@
     */
     function displayServices()
     {
-      //Creating header element
         let serviceHeading = document.createElement("h1");
 
-        //Setting headers id and giving it text content
         serviceHeading.setAttribute("id", "serviceHeading");
         serviceHeading.textContent = `Services`;
 
-        //Using jquery to select main element
         let mainContent = document.querySelector("main");
-        //Appending header to end of main
         mainContent.appendChild(serviceHeading);
 
-        //Creating a div element that contains the pages content
         let newDivTag = document.createElement("div");
         newDivTag.innerHTML = 
         `
@@ -152,7 +142,7 @@
   </tbody>
 </table>`;
 
-        //Appending the div to the end of main
+
         mainContent.append(newDivTag);
 
         
@@ -163,19 +153,14 @@
     */
     function displayContact()
     {
-      //Creating header element
       let contactHeading = document.createElement("h1");
 
-      //Setting headers id and giving it text content
       contactHeading.setAttribute("id", "contactHeading");
       contactHeading.textContent = "Enter a Contact";
 
-      //Using jquery to select main element
       let mainContent = document.querySelector("main");
-      //Appending header to end of main
       mainContent.appendChild(contactHeading);
 
-      //Creating a div element that contains the pages content
       let newDivTag = document.createElement("div");
       newDivTag.innerHTML = 
       `<div id="messageArea"></div>
@@ -205,17 +190,15 @@
           <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
         </form>
       </div>`;
-        
-      //Appending the div to the end of main
+
       mainContent.append(newDivTag);
 
-      //Selecting the send button
+
       let sendButton = document.getElementById("sendButton");
 
-        //Creating an event for when the send button is clicked
         sendButton.addEventListener("click", function(event){
             
-          window.location.href = './index.html'; //Redirect user to index
+          window.location.href = './index.html';
 
         });
 
@@ -226,14 +209,13 @@
     */
    function displayHeader()
    {
-     //Selecting the body tag
      let mainContent = document.querySelector("body");
 
-     //Creating a header tag 
-     let newHeaderTag = document.createElement("header");
+     //let sendButton = document.getElementById("body");
 
-     //Filling header tag inner html with header content
-     newHeaderTag.innerHTML = 
+     let newFooterTag = document.createElement("header");
+
+     newFooterTag.innerHTML = 
      `
      <header>
       <!-- Main Navigation -->
@@ -270,8 +252,8 @@
         </nav>
   </header>
      `
-    //Appending the header to the top of the body tag
-     mainContent.prepend(newHeaderTag);
+
+     mainContent.prepend(newFooterTag);
 
    }
 
@@ -326,13 +308,12 @@
    function alterProductsButton()
    {
 
-    //Selecting the 'products' list item button in the header
     let productsButton = document.getElementById("headerList").childNodes[3];
 
-    //Creating a new list item
+    //productsButton.textContent = "Projects";
+
     let newListItem = document.createElement("li");
 
-    //Setting the new list items inner html to the new button/ list item
     newListItem.innerHTML = 
    `
    <li class="nav-item">
@@ -340,7 +321,6 @@
              </li>
    `
 
-   //Replacing the products button with the projects button 
     productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
 
    }
@@ -350,15 +330,14 @@
     */
     function Start()
     {
-        console.log("App Started..."); //Initial console log
-        
-        displayHeader(); //Calling displayHeader() to display the header
+        console.log("App Started...");
 
-        alterProductsButton(); //Calling alterProductButton() to change the products button to projects button
+        displayHeader();
 
-        addHumanResourcesButton(); //Calling addHumanResources() to add the human resources button
+        alterProductsButton();
 
-        //Switch case that tests the documents title and calls the appropriate function
+        addHumanResourcesButton();
+
         switch (document.title) 
         {
           case "Home":
@@ -379,10 +358,9 @@
         }
         
     }
-    
-    displayFooter(); //Calling the display footer function to display the footer
 
-    //Calling the start function when loaded
+    displayFooter();
+
     window.addEventListener("load", Start);
 
 })();

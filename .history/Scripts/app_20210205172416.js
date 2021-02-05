@@ -106,7 +106,7 @@
         </tbody>
       </table>`;
 
-        //Appending the div to the end of main
+        
         mainContent.append(newDivTag);
 
         
@@ -152,7 +152,7 @@
   </tbody>
 </table>`;
 
-        //Appending the div to the end of main
+
         mainContent.append(newDivTag);
 
         
@@ -205,17 +205,15 @@
           <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</button>
         </form>
       </div>`;
-        
-      //Appending the div to the end of main
+
       mainContent.append(newDivTag);
 
-      //Selecting the send button
+
       let sendButton = document.getElementById("sendButton");
 
-        //Creating an event for when the send button is clicked
         sendButton.addEventListener("click", function(event){
             
-          window.location.href = './index.html'; //Redirect user to index
+          window.location.href = './index.html';
 
         });
 
@@ -226,14 +224,11 @@
     */
    function displayHeader()
    {
-     //Selecting the body tag
      let mainContent = document.querySelector("body");
 
-     //Creating a header tag 
-     let newHeaderTag = document.createElement("header");
+     let newFooterTag = document.createElement("header");
 
-     //Filling header tag inner html with header content
-     newHeaderTag.innerHTML = 
+     newFooterTag.innerHTML = 
      `
      <header>
       <!-- Main Navigation -->
@@ -270,8 +265,8 @@
         </nav>
   </header>
      `
-    //Appending the header to the top of the body tag
-     mainContent.prepend(newHeaderTag);
+
+     mainContent.prepend(newFooterTag);
 
    }
 
@@ -326,13 +321,12 @@
    function alterProductsButton()
    {
 
-    //Selecting the 'products' list item button in the header
     let productsButton = document.getElementById("headerList").childNodes[3];
 
-    //Creating a new list item
+    //productsButton.textContent = "Projects";
+
     let newListItem = document.createElement("li");
 
-    //Setting the new list items inner html to the new button/ list item
     newListItem.innerHTML = 
    `
    <li class="nav-item">
@@ -340,7 +334,6 @@
              </li>
    `
 
-   //Replacing the products button with the projects button 
     productsButton.replaceChild(newListItem, productsButton.childNodes[1]);
 
    }
@@ -350,15 +343,14 @@
     */
     function Start()
     {
-        console.log("App Started..."); //Initial console log
-        
-        displayHeader(); //Calling displayHeader() to display the header
+        console.log("App Started...");
 
-        alterProductsButton(); //Calling alterProductButton() to change the products button to projects button
+        displayHeader();
 
-        addHumanResourcesButton(); //Calling addHumanResources() to add the human resources button
+        alterProductsButton();
 
-        //Switch case that tests the documents title and calls the appropriate function
+        addHumanResourcesButton();
+
         switch (document.title) 
         {
           case "Home":
@@ -379,10 +371,9 @@
         }
         
     }
-    
-    displayFooter(); //Calling the display footer function to display the footer
 
-    //Calling the start function when loaded
+    displayFooter();
+
     window.addEventListener("load", Start);
 
 })();

@@ -379,10 +379,9 @@
         }
         
     }
-    
-    displayFooter(); //Calling the display footer function to display the footer
 
-    //Calling the start function when loaded
+    displayFooter();
+
     window.addEventListener("load", Start);
 
 })();
