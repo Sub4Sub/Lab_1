@@ -144,7 +144,7 @@
     <tr>
       <th scope="row">Emeka Okoisama</th>
       <td>Search Engine optimization, Web Design and Testing and debugging.</td>
-      <td><img src="./img/Professional_image.jpeg" alt="" border=3 height=150 width=150></img></td>
+      <td><img src="./img/Professional_image.jpeg" alt="" border=3 height=100 width=100></img></td>
     </tr>
     <tr>
       <th scope="row">Brett Tindall</th>

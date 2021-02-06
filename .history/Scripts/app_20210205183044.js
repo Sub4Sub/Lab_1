@@ -144,7 +144,7 @@
     <tr>
       <th scope="row">Emeka Okoisama</th>
       <td>Search Engine optimization, Web Design and Testing and debugging.</td>
-      <td><img src="./img/Professional_image.jpeg" alt="" border=3 height=150 width=150></img></td>
+      <td><img src="./img/Professional_image.jpeg" alt="" border=3 height=100 width=100></img></td>
     </tr>
     <tr>
       <th scope="row">Brett Tindall</th>
@@ -194,13 +194,13 @@
     <th scope="row">Emeka Okoisama</th>
     <td>Is a forward-thinking and enthusiastic individual with a passion for service delivery and customer satisfaction. I bring energy, enthusiasm, problem-solving and teamwork skills to any </b>
     position. I am highly motivated with outstanding interpersonal skills with the ability to work independently and in a team.</td>
-    <td><a href="./resumes/Resume-Emeka-Okoisama.pdf">Link to Emeka's resume</a></td>
+    <td></td>
     <td><img src="./img/Professional_image.jpeg" alt="" border=3 height=150 width=150></img></td>
   </tr>
   <tr>
     <th scope="row">Brett Tindall</th>
     <td>Is a dedicated worker who is adept at programming in many different languages. I bring charisma and hard work to any project I work on and can flex to fill most roles. I am very passionate about my work and enjoy taking leadership roles.</td>
-    <td><a href="./resumes/Resume-Brett-Tindall.pdf">Link to Brett's resume</a></td>
+    <td><a href="./resumes/Resume-Brett-Tindall.pdf">link text</a></td>
     <td><img src="./img/me.png" alt="" border=3 height=150 width=150></img></td>
   </tr>
 </tbody>
