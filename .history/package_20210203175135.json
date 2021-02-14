@@ -1,9 +1,9 @@
 {
-  "name": "Lab_2",
+  "name": "Lab_1",
   "version": "1",
-  "description": "Second webd 6201 lab",
+  "description": "First webd 6201 lab",
   "main": "index.js",
-  "repository": "https://github.com/Sub4Sub/Lab_2.git",
+  "repository": "https://github.com/Sub4Sub/Lab_1.git",
   "author": "Brett Tindall",
   "license": "MIT",
   "dependencies": {

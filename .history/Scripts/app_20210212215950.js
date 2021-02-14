@@ -236,19 +236,19 @@ mainContent.append(newDivTag);
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Full Name </span>
-            <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-described by="Full Name Input"
+            <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-describedby="Full Name Input"
             name="fullName" required>
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
-            <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-described by="Contact Number Input"
+            <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-describedby="Contact Number Input"
             name="contactNumber" required>
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-described by="Email Address Input"
+            <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-describedby="Email Address Input"
             name="emailAddress" required>
           </div>
 
@@ -409,9 +409,9 @@ mainContent.append(newDivTag);
 
         addHumanResourcesButton(); //Calling addHumanResources() to add the human resources button
 
-        let mainContent2 = document.querySelector("body");
+        let mainContent = document.querySelector("body");
 
-        mainContent2.setAttribute("style", "background-image: url('./img/background.jpg')");
+        indexHeading.setAttribute("id", "indexHeading");
 
         //Switch case that tests the documents title and calls the appropriate function
         switch (document.title) 

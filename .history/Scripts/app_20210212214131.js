@@ -32,8 +32,8 @@
         newDivTag.innerHTML = 
         `<h4>By Brett Tindall and Emeka Okoisama</h4>
         <p id="paragraphThree">
-        Hello, welcome to our first second submission for Webd 6201. This website consists of multiple web pages that give information about us
-        and help demonstrate our prowess with jquery.
+        Hello, welcome to our first lab submission for Webd 6201. This website consists of multiple web pages that give information about us
+        and help demonstrate our prowess with javascript.
         </p>`;
 
         //Appending the div to the end of main
@@ -236,19 +236,19 @@ mainContent.append(newDivTag);
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Full Name </span>
-            <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-described by="Full Name Input"
+            <input id="fullName" type="text" class="form-control" aria-label="Full Name" aria-describedby="Full Name Input"
             name="fullName" required>
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Contact Number</span>
-            <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-described by="Contact Number Input"
+            <input id="contactNumber" type="tel" class="form-control" aria-label="Contact Number" aria-describedby="Contact Number Input"
             name="contactNumber" required>
           </div>
 
           <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-described by="Email Address Input"
+            <input id="emailAddress" type="email" class="form-control" aria-label="Email Address" aria-describedby="Email Address Input"
             name="emailAddress" required>
           </div>
 
@@ -408,10 +408,6 @@ mainContent.append(newDivTag);
         alterProductsButton(); //Calling alterProductButton() to change the products button to projects button
 
         addHumanResourcesButton(); //Calling addHumanResources() to add the human resources button
-
-        let mainContent2 = document.querySelector("body");
-
-        mainContent2.setAttribute("style", "background-image: url('./img/background.jpg')");
 
         //Switch case that tests the documents title and calls the appropriate function
         switch (document.title) 
